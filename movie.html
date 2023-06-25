@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>project2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://kit.fontawesome.com/1644dc31f0.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="myScript.js" defer></script>
+<link href="myStyle.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<ul class="Container1">
+<li id="Style"> <div title="click me to change the style"> Style <i class="fas fa-sort"></i></div>
+	<form onchange="dropdown_choice1()" id="choice1">
+    <select name="dropdown1" size="5">
+		<option value="rgb(60, 60, 60)" selected>default</option>
+		<option value="rgb(254, 99, 71)">Tomato</option>
+		<option value="rgb(60, 179, 113)">Avocado</option>
+		<option value="rgba(255, 169, 0, 1)">Banana</option>
+		
+
+	</select>
+	</form>
+ </li>
+
+<li id="Backgroung-Image"> <div title="click me to change the background-image"> Backgroung-Image <i class="fas fa-sort"></i> </div>
+	<form onchange="dropdown_choice2()" id="choice2">
+    <select name="dropdown2" size="5">
+		<option value="https://image.freepik.com/free-photo/autumn-fall-leaves-wooden-background_23-2147880959.jpg" selected>Maple</option>
+		<option value="  https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">Flowers</option>
+		<option value="https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-simple-ppt-background-backgroundppt-template-backgroundsimplefashionbackground-image_54792.jpg">Circles</option>
+		<option value="https://www.stockvault.net/data/2018/03/08/243509/preview16.jpg">Forest</option>
+	</select>
+	</form>
+</li>
+
+<li id="FontFamily">  <div title="click me to change the font-family"> Font-Family <i class="fas fa-sort"></i> </div>
+	<form onchange="dropdown_choice3()" id="choice3">
+    <select name="dropdown3" size="5">
+		<option value="Arial" selected>default</option>
+		<option value="Times New Roman">Times New Roman</option>
+		<option value="Book Antiqua">Book Antiqua</option>
+		<option value="Courier New">Courier New</option>
+	</select>
+	</form>
+</li>
+</ul>
+
+
+<div class="main">
+	<h1 id="start" title="click me to explore more information!"><b>start to know <span id="tag">M<i class="fab fa-opera"></i>RE</span></b></h1>
+
+
+	<div id="Body">
+
+			
+			
+			
+		<div class="input">
+		<div class="title">
+		<i class="fas fa-search"></i>Enter movie information below<i class="fas fa-angle-double-down"></i>
+		</div>
+			<div class="container">
+				<span class="Item1"><i class="far fa-bookmark"></i> Title:</span>  <input type="text" id="movieTitle" placeholder="example:Avengers/Gold/Room/Terminator"><br>
+				<span class="Item2"><i class="far fa-calendar-minus"></i>  Year:</span>  <input type="text" id="movieYear" placeholder="skip it if you forgot">
+				<div class="item"><button type="button" id="btn" onclick="submit()">Submit</button></div>
+
+			</div>
+		
+				
+			
+
+		
+
+		<div id="output">
+		
+			<table>
+			
+				<tr><th><i class="fas fa-file-signature"></i>Title:</th><td id="resultTitle"></td></tr>
+				<tr><th><i class="fas fa-tape"></i>Type:</th><td id="resultType"></td></tr>				
+				<tr><th><i class="fas fa-video"></i>Genre:</th><td id="resultGenre"></td></tr>
+				<tr><th><i class="fas fa-globe"></i>Language:</th><td id="resultLanguage"></td></tr>
+				<tr><th><i class="fas fa-globe-americas"></i>Country:</th><td id="resultCountry"></td></tr>
+				<tr><th><i class="fas fa-photo-video"></i>Directed By:</th><td id="resultDirector"></td></tr>
+				<tr><th><i class="fas fa-film"></i>Starring:</th><td id="resultStars"></td></tr>
+				<tr><th><i class="far fa-clock"></i>Running Time:</th><td id="resultTime"></td></tr>
+				<tr><th><i class="fas fa-icons"></i>Plot:</th><td id="resultPlot"></td></tr>
+				<tr><th><i class="fab fa-youtube-square"></i>Box Office:</th><td id="resultBoxOffice"></td></tr>
+				<tr><th><i class="fas fa-trophy"></i>Awards:</th><td id="resultAwards"></td></tr>
+				<tr><th><i class="fas fa-crown"></i>Rated:</th><td id="resultRated"><img id="ratedImg"></td></tr>
+				<tr><th><i class="far fa-calendar-alt"></i>Date:</th><td id="resultYear"></td></tr>
+				<tr><th><i class="fas fa-award"></i>Rating:</th><td id="resultRating"></td></tr>
+				<tr><th><i class="fas fa-medal"></i>Stars:</th><td id="resultstar"></td></tr>
+			</table>
+		</div>
+		
+		
+	</div>
+		
+
+</div>
+</body>
+</html>
